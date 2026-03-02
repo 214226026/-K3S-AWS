@@ -512,3 +512,7 @@ kubectl delete namespace omec
 ```
 
 ## Next Steps
+After deploying SD-Core, proceed to:
+- [RAN Connectivity](ran-connectivity.md) to connect gNBs
+- [Troubleshooting](troubleshooting.md) for common issues
+
