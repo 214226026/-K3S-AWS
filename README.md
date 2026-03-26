@@ -16,6 +16,7 @@ This guide walks you through deploying a **K3s HA cluster with 3 master (server)
 
 ---
 
+
 ## Prerequisites
 
 - AWS account with permissions to create EC2 instances, VPCs, and security groups
@@ -510,7 +511,11 @@ How Containerization Enables Scalability:
 - Microservices Architecture: Containers are ideal for breaking down monolithic applications into smaller, modular microservices that can be scaled independently, rather than scaling an entire application
 - Orchestration (Kubernetes): Container orchestration tools, such as Kubernetes, automate the deployment, load balancing, and scaling of containers in response to traffic spikes.
 - Portability & Consistency: Containers bundle applications with their dependencies, ensuring consistent behavior across development, testing, and production environments
+<img width="1847" height="877" alt="214226026_EC2_Instances" src="https://github.com/user-attachments/assets/5603d0e9-326e-4d05-b14b-75d73badd2ef" />
 
+<img width="1847" height="735" alt="214226026_KUBE-NODES" src="https://github.com/user-attachments/assets/04ef3499-18a3-4e39-914e-e4113194682e" />
+
+<img width="1851" height="880" alt="214226026_Kube_config" src="https://github.com/user-attachments/assets/54c33d06-81e2-4d1a-be8d-83e1b8b1778c" />
 
 
 
