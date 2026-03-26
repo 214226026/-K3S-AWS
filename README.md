@@ -518,5 +518,8 @@ How Containerization Enables Scalability:
 <img width="1851" height="880" alt="214226026_Kube_config" src="https://github.com/user-attachments/assets/54c33d06-81e2-4d1a-be8d-83e1b8b1778c" />
 
 
+<img width="1843" height="833" alt="214226026_kube_config_Hist3" src="https://github.com/user-attachments/assets/93e5b5bb-4eea-4c96-b09e-fee10fba6fee" />
+<img width="1857" height="825" alt="214226026_Kube_config_Hist2" src="https://github.com/user-attachments/assets/400e7035-6235-4a09-b29b-e21dbac322e8" />
+<img width="1858" height="885" alt="214226026_Kube_config_Hist1" src="https://github.com/user-attachments/assets/22057554-bd5d-4deb-8c05-2a1252c9287e" />
 
 
