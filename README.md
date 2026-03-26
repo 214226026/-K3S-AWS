@@ -472,7 +472,6 @@ See `registries.yml` for the ECR configuration. The recommended approach on EC2 
 
 
 ### Architecture Explanation
-
 What is K3s:
 - K3s is a highly available, certified Kubernetes distribution designed for production workloads in unattended, resource-constrained, remote locations or inside IoT appliances.
 Why use K3s:
@@ -489,6 +488,30 @@ Key Components of K3s:
 - Load Balancer: K3s includes a lightweight service load balancer called Klipper-lb for Service type LoadBalancer.
 - Default Storage: Uses SQLite as the default lightweight database for single-node setups.
 - High Availability: For high availability, K3s supports external databases like etcd, MySQL, or PostgreSQL
+
+
+### Reflection
+What did you learn?
+- Just because one has experienced in Kubernetes and linux configuration does not mean that deploying Kubernetes clusters are easy, I had to make use of my experience as well as AI to explain why I was getting some errors and issues.
+What challenges did you face and how did you resolve them?
+- At some point my nodes could not speak/communicate with each other and I needed to understand why; I had to go back to basics before deploying my instances as in I had to create security group with specific port numbers to help with all nodes being able to see each other.
+How does k3s relate to production Kubernetes
+- Fully Certified & Compatible: K3s is not a fork; it is fully conformant with Kubernetes APIs
+- Production-Ready, Not Just for Testing
+- Simplified Production Setup
+- Optimized for Resources
+- Data Backend Flexibility
+How do virtualization and containerization enable scalable services?
+-	Server Consolidation & Optimization: Virtualization consolidates multiple workloads onto a single physical host using a hypervisor, reducing hardware requirements and improving resource efficiency
+- Rapid Provisioning: VMs can be deployed, cloned, or migrated between physical servers in minutes, facilitating quick adaptation to demand.
+- Elasticity in Cloud: It enables "scaling up" by assigning more vCPU/RAM to a VM or "scaling out" by adding more VMs, often managed automatically by cloud providers
+How Containerization Enables Scalability:
+- Lightweight & High Density: Containers share the host OS kernel, making them much smaller than VMs, allowing higher density (hundreds per host) and faster startup times (milliseconds).
+- Microservices Architecture: Containers are ideal for breaking down monolithic applications into smaller, modular microservices that can be scaled independently, rather than scaling an entire application
+- Orchestration (Kubernetes): Container orchestration tools, such as Kubernetes, automate the deployment, load balancing, and scaling of containers in response to traffic spikes.
+- Portability & Consistency: Containers bundle applications with their dependencies, ensuring consistent behavior across development, testing, and production environments
+
+
 
 
 
