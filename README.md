@@ -469,3 +469,26 @@ aws ec2 modify-instance-metadata-options \
 ### Private Registry (Amazon ECR)
 
 See `registries.yml` for the ECR configuration. The recommended approach on EC2 is to attach the `AmazonEC2ContainerRegistryReadOnly` IAM policy to the instance profile — no static credentials are needed.
+
+
+### Architecture Explanation
+
+What is K3s:
+- K3s is a highly available, certified Kubernetes distribution designed for production workloads in unattended, resource-constrained, remote locations or inside IoT appliances.
+Why use K3s:
+- Lightweight & Resource Efficient
+- Production-Ready & Certified
+- Operational Simplicity
+- Ideal for Edge/IoT
+Key Components of K3s:
+- Control Plane (Server Node): The "brain" of the cluster.
+- Agents (Worker Nodes): Nodes that run application workloads
+- Container Runtime: K3s defaults to containerd as the CRI (Container Runtime Interface), which is built-in and manages the container lifecycle (run, stop, images
+- Container Runtime: K3s defaults to containerd as the CRI (Container Runtime Interface), which is built-in and manages the container lifecycle (run, stop, images
+- Ingress: Traefik is bundled as the default ingress controller to handle HTTP/HTTPS traffic routing.
+- Load Balancer: K3s includes a lightweight service load balancer called Klipper-lb for Service type LoadBalancer.
+- Default Storage: Uses SQLite as the default lightweight database for single-node setups.
+- High Availability: For high availability, K3s supports external databases like etcd, MySQL, or PostgreSQL
+
+
+
